@@ -1,16 +1,14 @@
-# 🦊BunNestTS 🦊 
+# 🦊 HuAngBunNesTS 🦊 
 
-To install dependencies:
+![huhu](./huhu.png)
 
-```bash
-bun install
-```
+## What
 
-To run:
+- Bun
+- NestJS API
+- Static Angular Webapp
 
-```bash
-bun api
-```
+## How?
 
-
-This project was created using `bun init` in bun v1.2.5. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+- Install dependencies `bun install`
+- Start the dev envirronement `bun dev`
