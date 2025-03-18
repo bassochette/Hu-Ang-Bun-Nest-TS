@@ -17,13 +17,13 @@ describe('AppComponent', () => {
   it(`should have the 'basuo_laoshi-front' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('basuo_laoshi-front');
+    expect(app.title).toEqual('🦊');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, basuo_laoshi-front');
+    expect(compiled.querySelector('h1')?.textContent).toContain('大家好！');
   });
 });

@@ -7,9 +7,10 @@
   "private": true,
   "scripts": {
     "api": "bun run --inspect api/bootstrap.ts --watch",
-    "webapp": "bun run ng serve",
     "dev": "concurrently \"bun run api\" \"bun run webapp\"",
-    "webapp:build": "bun run ng build"
+    "webapp": "bun run ng serve",
+    "webapp:build": "bun run ng build",
+    "webapp:test": "bun run ng test"
   },
   "devDependencies": {
     "@types/bun": "latest",
