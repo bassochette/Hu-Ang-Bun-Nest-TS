@@ -7,11 +7,11 @@
   "private": true,
   "scripts": {
     "api": "bun run --inspect api/bootstrap.ts --watch",
+    "build:api-client": "bun run api/open-api.ts && bun run openapi-generator-cli generate -i ./openapi.json -g typescript-rxjs -o ./generated-api-client",
     "dev": "concurrently \"bun run api\" \"bun run webapp\"",
     "webapp": "bun run ng serve",
     "webapp:build": "bun run ng build",
-    "webapp:test": "bun run ng test",
-    "build:api-client": "bun run openapi-generator-cli generate -i ./openapi.json -g typescript-angular -o ./generated-api-client-angular --additional-properties=npmName=hu-api,ngVersion=19"
+    "webapp:test": "bun run ng test"
   },
   "devDependencies": {
     "@angular/animations": "^19.2.0",
