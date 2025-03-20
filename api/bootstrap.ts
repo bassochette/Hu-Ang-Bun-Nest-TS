@@ -19,8 +19,8 @@ const openAPIConfig = new DocumentBuilder()
     .addServer('http://localhost:3000')
     .setVersion('1.0')
     .build()
-
 const document = SwaggerModule.createDocument(app, openAPIConfig);
+await Bun.write('openapi.json', JSON.stringify(document, null, 2));
 SwaggerModule.setup('swagger', app, document);
   
 /* Start */

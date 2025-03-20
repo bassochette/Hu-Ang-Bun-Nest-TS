@@ -5,6 +5,8 @@ node_modules
 out
 dist
 *.tgz
+openapi.json
+generated-api-client-angular
 
 # code coverage
 coverage
