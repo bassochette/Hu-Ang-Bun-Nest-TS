@@ -10,19 +10,18 @@ const app = await NestFactory.create<NestApplication>(AppModule);
 /* Middleware */
 app.enableCors();
 app.use(helmet());
-app.use(compression())
+app.use(compression());
 
 /* Open API */
 const openAPIConfig = new DocumentBuilder()
-    .setTitle('🦊 API')
-    .setDescription('The 🦊 API description')
-    .addServer('http://localhost:3000')
-    .setVersion('1.0')
-    .build()
+  .setTitle('🦊 API')
+  .setDescription('The 🦊 API description')
+  .addServer('http://localhost:3000')
+  .setVersion('1.0')
+  .build();
 const document = SwaggerModule.createDocument(app, openAPIConfig);
-await Bun.write('openapi.json', JSON.stringify(document, null, 2));
 SwaggerModule.setup('swagger', app, document);
-  
+
 /* Start */
 const port = process.env.PORT || 3000;
 await app.listen(port);

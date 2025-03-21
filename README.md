@@ -1,4 +1,4 @@
-# 🦊 HuAngBunNesTS 🦊 
+# 🦊 HuAngBunNesTS 🦊
 
 ![huhu](./huhu.png)
 
@@ -11,4 +11,5 @@
 ## How?
 
 - Install dependencies `bun install`
-- Start the dev envirronement `bun dev`
+- Build the API client `bun build:api-client` (not watchable right now)
+- Start the dev environement `bun dev` (Webapp + API)

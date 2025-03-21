@@ -15,6 +15,9 @@ import type { Observable } from 'rxjs';
 import type { AjaxResponse } from 'rxjs/ajax';
 import { BaseAPI } from '../runtime';
 import type { OperationOpts } from '../runtime';
+import type {
+    DateResponseDto,
+} from '../models';
 
 /**
  * no description
@@ -23,10 +26,10 @@ export class AppApi extends BaseAPI {
 
     /**
      */
-    appControllerGetCurrentDate(): Observable<void>
-    appControllerGetCurrentDate(opts?: OperationOpts): Observable<void | AjaxResponse<void>>
-    appControllerGetCurrentDate(opts?: OperationOpts): Observable<void | AjaxResponse<void>> {
-        return this.request<void>({
+    appControllerGetCurrentDate(): Observable<DateResponseDto>
+    appControllerGetCurrentDate(opts?: OperationOpts): Observable<AjaxResponse<DateResponseDto>>
+    appControllerGetCurrentDate(opts?: OperationOpts): Observable<DateResponseDto | AjaxResponse<DateResponseDto>> {
+        return this.request<DateResponseDto>({
             url: '/date',
             method: 'GET',
         }, opts?.responseOpts);
