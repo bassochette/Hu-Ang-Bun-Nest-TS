@@ -39,6 +39,8 @@ export class ChatRequestDto {
    *   userTag: "李道然"
    * })
    *
+   * documentation lies!
+   *
    * @param chatRequest
    */
   constructor(chatRequest: Partial<ChatRequestDto>) {
