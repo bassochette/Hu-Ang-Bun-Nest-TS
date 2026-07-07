@@ -51,7 +51,7 @@
     "@tailwindcss/postcss": "^4.0.15",
     "@types/jasmine": "~5.1.0",
     "class-transformer": "^0.5.1",
-    "class-validator": "^0.14.1",
+    "class-validator": "^0.15.0",
     "compression": "^1.8.0",
     "helmet": "^8.1.0",
     "jasmine-core": "~5.6.0",
