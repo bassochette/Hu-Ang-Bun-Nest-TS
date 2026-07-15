@@ -39,8 +39,8 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@angular-devkit/build-angular": "^19.2.0",
-    "@angular/cli": "^19.2.0",
+    "@angular-devkit/build-angular": "^22.0.0",
+    "@angular/cli": "^22.0.0",
     "@angular/compiler-cli": "^19.2.0",
     "@nestjs/cli": "^11.0.5",
     "@nestjs/common": "^11.0.11",
